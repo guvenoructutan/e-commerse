@@ -1,13 +1,18 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
+import "slick-carousel/slick/slick.css";
+import App from "./App";
+import CartProvider from "./context/CartProvider";
+import "slick-carousel/slick/slick.css";
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-     <MainLayout>
-      <App />
-    </MainLayout>
-  </React.StrictMode>
+  <BrowserRouter>
+    <CartProvider>
+      <MainLayout>
+        <App />
+      </MainLayout>
+    </CartProvider>
+  </BrowserRouter>
 );
