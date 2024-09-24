@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-import "slick-carousel/slick/slick.css";
-import App from "./App";
 import CartProvider from "./context/CartProvider";
+import App from "./App";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick.css";
 import "./index.css";
 
